@@ -1,13 +1,13 @@
 Src/main.o: ../Src/main.c \
- C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h \
- C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/core_cm3.h \
- C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_version.h \
- C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_compiler.h \
- C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_gcc.h \
- C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
-C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h:
-C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/core_cm3.h:
-C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_version.h:
-C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_compiler.h:
-C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_gcc.h:
-C:/Users/Lenovo/Desktop/embedding/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:
+ C:/Users/Lenovo/Desktop/embedded/cmsis-header-stm32/stm32f1xx/Include/stm32f103xb.h \
+ C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/core_cm3.h \
+ C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/core_cmInstr.h \
+ C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/cmsis_gcc.h \
+ C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/core_cmFunc.h \
+ C:/Users/Lenovo/Desktop/embedded/cmsis-header-stm32/stm32f1xx/Include/system_stm32f1xx.h
+C:/Users/Lenovo/Desktop/embedded/cmsis-header-stm32/stm32f1xx/Include/stm32f103xb.h:
+C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/core_cm3.h:
+C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/core_cmInstr.h:
+C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/cmsis_gcc.h:
+C:/Users/Lenovo/Desktop/embedded/CMSIS_4/CMSIS/Include/core_cmFunc.h:
+C:/Users/Lenovo/Desktop/embedded/cmsis-header-stm32/stm32f1xx/Include/system_stm32f1xx.h:

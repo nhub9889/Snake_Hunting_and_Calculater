@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 00000060  00000000  00000000  000039b8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00010ee5  00000000  00000000  00003a18  2**0
+ 16 .debug_macro  00010cc0  00000000  00000000  00003a18  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00000ea9  00000000  00000000  000148fd  2**0
+ 17 .debug_line   00000e72  00000000  00000000  000146d8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00057f7e  00000000  00000000  000157a6  2**0
+ 18 .debug_str    00057024  00000000  00000000  0001554a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0006d724  2**0
+ 19 .comment      00000043  00000000  00000000  0006c56e  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00000764  00000000  00000000  0006d768  2**2
+ 20 .debug_frame  00000764  00000000  00000000  0006c5b4  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000055  00000000  00000000  0006decc  2**0
+ 21 .debug_line_str 00000071  00000000  00000000  0006cd18  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -82,7 +82,7 @@ Disassembly of section .text:
 char last_op = 0;
 char input_buffer[16] = {0};
 int idx = 0;
-int is_first_input = 1;
+int flag = 1;
 
 void uart1_init(void) {
  8000170:	b480      	push	{r7}
@@ -447,7 +447,7 @@ int main(void) {
  800040a:	2200      	movs	r2, #0
  800040c:	601a      	str	r2, [r3, #0]
 
-                if (is_first_input) {
+                if (flag) {
  800040e:	4b1e      	ldr	r3, [pc, #120]	@ (8000488 <main+0xfc>)
  8000410:	681b      	ldr	r3, [r3, #0]
  8000412:	2b00      	cmp	r3, #0
@@ -456,7 +456,7 @@ int main(void) {
  8000416:	4a1d      	ldr	r2, [pc, #116]	@ (800048c <main+0x100>)
  8000418:	6b3b      	ldr	r3, [r7, #48]	@ 0x30
  800041a:	6013      	str	r3, [r2, #0]
-                    is_first_input = 0;
+                    flag = 0;
  800041c:	4b1a      	ldr	r3, [pc, #104]	@ (8000488 <main+0xfc>)
  800041e:	2200      	movs	r2, #0
  8000420:	601a      	str	r2, [r3, #0]
@@ -491,7 +491,7 @@ int main(void) {
  8000450:	1d3b      	adds	r3, r7, #4
  8000452:	4618      	mov	r0, r3
  8000454:	f7ff feb8 	bl	80001c8 <uart1_write_str>
-                    is_first_input = 1;
+                    flag = 1;
  8000458:	4b0b      	ldr	r3, [pc, #44]	@ (8000488 <main+0xfc>)
  800045a:	2201      	movs	r2, #1
  800045c:	601a      	str	r2, [r3, #0]
